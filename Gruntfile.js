@@ -26,6 +26,12 @@ module.exports = function(grunt) {
         cwd: 'src/api',
         src: '**/*.json',
         dest: 'public/'
+      },
+      clientWeb:{
+        expand:true,
+        cwd:'client/dist',
+        src:['**/*'],
+        dest:'static/'
       }
     },
 

@@ -2,7 +2,7 @@ const express = require('express')
 const path = require('path')
 const port = process.env.PORT || 8080
 const app = express()
-const contentBasePath = path.join(__dirname, 'public');
+const contentBasePath = path.join(__dirname, 'static');
 
 // serve static assets normally
 app.use(express.static(contentBasePath))
