@@ -1,10 +1,10 @@
 <template>
 <div class="footer">
     <b-row>
-        <b-col cols="1">
+        <b-col cols="1" class="logo-col">
              <div class="logo"> <i class="icon-logo"></i></div>
         </b-col>
-        <b-col>
+        <b-col cols="1" class="links">
             <ul>
                 <li>Products</li>
                 <li>News</li>
@@ -12,7 +12,7 @@
                 <li>Your Cart</li>
             </ul>
         </b-col>
-        <b-col>
+        <b-col >
             <div class="social-media-block">
                 <div class="social-icons">
                     <i class="icon-social-icon-google"></i>
@@ -42,12 +42,14 @@
         border-color:  var(--black-05);
         .logo{  
 
-                width: fit-content;
+                width: 100%;
                 padding: 130px 0px;
             }
         ul{
             padding-top: 50px;
             list-style-type:none;
+            padding-left: 0px;
+            padding-right: 0px;
             li{ 
                 color:var(--black-87);
                 padding: 10px;
@@ -73,6 +75,38 @@
 
             }
         }
+    }
+
+    @media screen and (max-width: 768px)   {
+          .footer{
+              padding-left:16px;
+              .logo-col{
+                  width: 100%;
+                  .logo{
+                        padding: 40px 0px;
+                  }
+              }
+              .links{
+                    width: 100%;
+                    padding: 0px;
+                    ul{ 
+                        padding-top:0px;
+                    }
+              }
+              .social-media-block{ 
+                  float: left;
+                  padding-top: 20px;
+                  i{
+                      &:first-child{
+                          padding-left: 10px;
+                      }
+                  }
+                  p{
+                      text-align: left;
+                      padding-left: 10px;
+                  }
+              }
+          }
     }
     
 </style>
