@@ -49,6 +49,7 @@
         }
          .button{
              text-align: left;
+             margin-bottom: 30px;
          }
     }
 }
@@ -56,7 +57,6 @@
     .sub-container{
         flex-direction: column-reverse;
         img{    
-            
             width: 100%;
         }
     }

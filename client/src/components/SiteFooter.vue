@@ -4,7 +4,7 @@
         <b-col cols="1" class="logo-col">
              <div class="logo"> <i class="icon-logo"></i></div>
         </b-col>
-        <b-col cols="1" class="links">
+        <b-col cols="2" class="links">
             <ul>
                 <li>Products</li>
                 <li>News</li>
@@ -96,7 +96,9 @@
               .social-media-block{ 
                   float: left;
                   padding-top: 20px;
+                  padding-right: 0px;
                   i{
+                      font-size: 15px !important;
                       &:first-child{
                           padding-left: 10px;
                       }
