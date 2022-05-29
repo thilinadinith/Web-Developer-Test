@@ -1,0 +1,63 @@
+
+
+// Tablet
+@media screen and (min-width: 768px)   {
+    .mobile{
+        display: none;
+    }
+    .tab{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .mobile{
+        display: block;
+    }
+    .tab{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media screen and (min-width: 480px)   {
+    .mobile{
+        display: block;
+    }
+    .tab{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+}
+
+// Desktop
+@media screen and (min-width: 992px)   {
+    .mobile{
+        display: none;
+    }
+    .tab{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
+// Huge
+@media screen and  (min-width: 1280px)   {
+    .mobile{
+        display: none;
+    }
+    .tab{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
