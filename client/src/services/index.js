@@ -1,7 +1,5 @@
 const api = {
-    origin: (process.env.NODE_ENV === 'development') ? 'http://localhost:8080/' : '/',
-    root: (process.env.NODE_ENV === 'development') ? 'http://localhost:8080/' : '/',
+    root: '/',
+    // root: 'https://dme4exuj80ivk.cloudfront.net/',
 }
-
-
 export default api
