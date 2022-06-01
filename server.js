@@ -1,23 +1,30 @@
+process.env.NODE_ENV = process.env.NODE_ENV || "development";
 const express = require('express')
 const path = require('path')
-const port = process.env.PORT || 8080
+const config = require('./config');
 const app = express()
 const contentBasePath = path.join(__dirname, 'static');
-
+const CartController = require('./src/controllers/CartController');
+const cors = require("cors");
 // serve static assets normally
 app.use(express.static(contentBasePath))
+app.use(cors());
 
 // handle every other route with index.html, which will contain
 // a script tag to your application's JavaScript file(s).
-app.get('*', function (request, response){
-  response.sendFile(path.resolve(contentBasePath, 'index.html'))
-})
+app.get('/cart/getData', CartController.getData);
+app.post('/cart/postData', CartController.postData);
+// app.get('*', function (request, response){
+//   response.sendFile(path.resolve(contentBasePath, 'index.html'))
+// })
 
 
-app.listen(port, (error) => {
+
+
+app.listen(config.port, config.ip, (error) => {
   if (error) {
     console.error('error', error)
   } else {
-    console.info(`\n ==> 🌎  Listening on port ${port}. Open up http://localhost:${port}/ in your browser.`)
+    console.info(`\n ==> 🌎  Listening on port ${config.port}. Open up http://localhost:${config.port}/ in your browser.`)
   }
 })
