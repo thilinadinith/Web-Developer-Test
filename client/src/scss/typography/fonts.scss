@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('#{$url-fonts}/Libre_Franklin/libre-franklin-v12-latin-regular.eot');
+    src: url('#{$url-fonts}/Libre_Franklin/libre-franklin-v12-latin-regular.ttf') format('truetype'),
+    url('#{$url-fonts}/Libre_Franklin/libre-franklin-v12-latin-regular.woff') format('woff'),
+    url('#{$url-fonts}/Libre_Franklin/libre-franklin-v12-latin-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('#{$url-fonts}/icomoon/icomoon.eot?xhdk7e');
+    src: url('#{$url-fonts}/icomoon/icomoon.eot?xhdk7e#iefix') format('embedded-opentype'),
+    url('#{$url-fonts}/icomoon/icomoon.ttf?xhdk7e') format('truetype'),
+    url('#{$url-fonts}/icomoon/icomoon.woff?xhdk7e') format('woff'),
+    url('#{$url-fonts}/icomoon/icomoon.svg?xhdk7e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+@font-face {
+    font-family: LibreFranklin;
+    src: url('#{$url-fonts}/Libre_Franklin/LibreFranklin-ExtraLight.ttf') format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: LibreFranklin;
+    src: url('#{$url-fonts}/Libre_Franklin/LibreFranklin-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: LibreFranklin;
+    src: url('#{$url-fonts}/Libre_Franklin/LibreFranklin-Medium.ttf') format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-delete-cart:before {
+    content: "\e900";
+}
+
+.icon-delete-icon:before {
+    content: "\e901";
+}
+
+.icon-logo:before {
+    content: "\e902";
+}
+
+.icon-social-icon-facebook:before {
+    content: "\e903";
+}
+
+.icon-social-icon-google:before {
+    content: "\e904";
+}
+
+.icon-social-icon-instragram:before {
+    content: "\e905";
+}
+
+.icon-social-icon-twitter:before {
+    content: "\e906";
+}
