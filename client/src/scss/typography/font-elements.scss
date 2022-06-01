@@ -1,11 +1,12 @@
-h1{
-  font-size: 2.813rem;
+h1 {
+    font-size: 2.813rem;
 }
 
-p.sm{
+p.sm {
     font-size: 14px;
 }
-@media screen and (max-width: 768px)   {
+
+@media screen and (max-width: 768px) {
 
     h1 {
         font-size: 32px !important;
@@ -14,7 +15,7 @@ p.sm{
 }
 
 
-  h1 {
+h1 {
     font-family: LibreFranklin;
     font-size: 45px;
     font-weight: 200;
@@ -23,9 +24,9 @@ p.sm{
     line-height: 1.07;
     letter-spacing: -1px;
     color: var(--white);
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: LibreFranklin;
     font-size: 34px;
     font-weight: 200;
@@ -35,9 +36,9 @@ p.sm{
     letter-spacing: -0.46px;
     text-align: center;
     color: var(--black);
-  }
-  
-  h3 {
+}
+
+h3 {
     font-family: LibreFranklin;
     font-size: 24px;
     font-weight: 200;
@@ -46,9 +47,9 @@ p.sm{
     line-height: 1.33;
     letter-spacing: -0.32px;
     color: var(--black);
-  }
-  
-  .sm_extralight {
+}
+
+.sm_extralight {
     font-family: LibreFranklin;
     font-size: 16px;
     font-weight: 200;
@@ -58,20 +59,9 @@ p.sm{
     letter-spacing: -0.14px;
     text-align: center;
     color: var(--black);
-  }
-  
-  .xs-medium {
-    font-family: LibreFranklin;
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.71;
-    letter-spacing: 0.08px;
-    color: var(--black);
-  }
-  
-  .sm {
+}
+
+.sm {
     font-family: LibreFranklin;
     font-size: 14px;
     font-weight: 500;
@@ -80,9 +70,9 @@ p.sm{
     line-height: 1.71;
     letter-spacing: 0.08px;
     color: var(--white);
-  }
-  
-  .xs-extralight {
+}
+
+.cart-base-font {
     font-family: LibreFranklin;
     font-size: 14px;
     font-weight: 200;
@@ -91,9 +81,20 @@ p.sm{
     line-height: 1.71;
     letter-spacing: 0.08px;
     color: var(--black);
-  }
-  
-  .footer-p {
+}
+
+.cart-subtext-font {
+    font-family: LibreFranklin;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.08px;
+    color: var(--black-87);
+}
+
+.footer-p {
     font-family: LibreFranklin;
     font-size: 12px;
     font-weight: 500;
@@ -103,9 +104,9 @@ p.sm{
     letter-spacing: 0.07px;
     text-align: right;
     color: var(--black);
-  }
-  
-  .nav-link a {
+}
+
+.nav-link a {
     font-family: LibreFranklin;
     font-size: 12px;
     font-weight: normal;
@@ -115,9 +116,9 @@ p.sm{
     letter-spacing: 0.33px;
     color: var(--black);
     text-transform: uppercase;
-  }
-  
-  p {
+}
+
+p {
     font-family: LibreFranklin;
     font-size: 12px;
     font-weight: normal;
@@ -127,9 +128,9 @@ p.sm{
     letter-spacing: 0.33px;
     text-align: center;
     color: var(--black);
-  }
+}
 
-  li{ 
+li {
     font-family: LibreFranklin;
     font-size: 12px;
     font-weight: normal;
@@ -137,4 +138,29 @@ p.sm{
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.33px;
-  }
+}
+
+
+@media screen and (max-width :768px) {
+    .cart-base-font {
+        font-family: LibreFranklin;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.08px;
+        color: var(--black-87);
+    }
+
+    .cart-subtext-font {
+        font-family: LibreFranklin;
+        font-size: 14px;
+        font-weight: 200;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.08px;
+        color: var(--black-87);
+    }
+}

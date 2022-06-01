@@ -1,0 +1,70 @@
+.toggle-items {
+    list-style: none;
+    background-color: var(--white);
+    width: 110px;
+    line-height: 47px;
+    position: fixed;
+    padding: 0px;
+    top: 10px;
+    right: 10px;
+    display: none;
+    border-radius: 2px;
+    z-index: 1000;
+
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    li {
+        &:first-child {
+            padding-top: 30px;
+        }
+
+        padding: 10px 20px 10px 20px;
+
+        &:last-child {
+            padding-bottom: 30px;
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: LibreFranklin;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.33px;
+            color: var(--black-87);
+        }
+    }
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .3, .3);
+        transform: scale3d(5, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.1, 0.1, 0.7);
+        transform: scale3d(0.5, 0.5, 0.1);
+    }
+
+    50% {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}

@@ -8,5 +8,14 @@ module.exports = defineConfig({
         additionalData: `@import "./src/scss/styles.scss";`,
       }
     }
+  },
+  pwa: {
+    name: "Web Test App",
+    themeColor: "#448aff",
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true,
+    }
+    
   }
 });
